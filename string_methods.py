@@ -1,0 +1,5 @@
+string = input('Please enter new sentence: ')
+print(string.title())
+print(string.capitalize())
+print(string.islower())
+print(string.swapcase())
