@@ -13,3 +13,6 @@ while True:
         else:
             print('Ending program')
             break
+
+for k, v in contact_list.items():
+    print(k, v)
