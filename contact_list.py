@@ -5,8 +5,9 @@ while True:
     if n in contact_list.keys():
         print(f'{n}\'s phone number is {contact_list[n]}')
     else:
-        question = input('Do you want to add this person\'s number?: ')
-        if question == 'yes' or question == 'Yes' or question == 'YES':
+        question = input('Do you want to add this person\'s number? ')
+        answer = question.lower()
+        if answer == 'yes':
             phone = int(input('Please enter the phone number: '))
             contact_list[n] = phone
             print(f'{n}\'s phone number is {contact_list[n]}')
