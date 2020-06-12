@@ -12,7 +12,7 @@ while True:
             contact_list[n] = phone
             print(f'{n}\'s phone number is {contact_list[n]}')
         else:
-            print('Ending program')
+            print('Exiting program')
             break
 
 for k, v in contact_list.items():
