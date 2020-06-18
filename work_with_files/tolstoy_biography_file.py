@@ -1,3 +1,5 @@
+'''Script works with tolstoy.txt file'''
+
 big_string = ''
 with open('tolstoy.txt', 'r') as inf:
     for line in inf:
