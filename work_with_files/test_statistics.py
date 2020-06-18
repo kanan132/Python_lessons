@@ -60,16 +60,10 @@ def most_frequent_word(string):
             max_word = value
             v = key
 
-    return f'The most frequency letter is {v.upper()} : {max_word}'
+    return f'The most frequency word is {v.upper()} : {max_word}'
 
 
 print(most_frequent_word(chapter))
-
-
-
-    
-    
-    
 
 
 
