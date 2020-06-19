@@ -20,7 +20,8 @@ def most_frequent_letter(string):
 
     return f'The most frequency letter is {v.upper()} : {max_letter}'
 
-print(most_frequent_letter(chapter))
+
+
 
 def count_letters(string):
     counter = 0
@@ -30,7 +31,6 @@ def count_letters(string):
     return f'Number of letters is {counter}'
 
 
-print(count_letters(chapter))
 
 
 def count_words(string):
@@ -42,7 +42,7 @@ def count_words(string):
 
     return f'Number of words is {counter}'
 
-print(count_words(chapter))
+
 
 def most_frequent_word(string):
     d_words = {}
@@ -63,7 +63,16 @@ def most_frequent_word(string):
     return f'The most frequency word is {v.upper()} : {max_word}'
 
 
-print(most_frequent_word(chapter))
+
+
+with open('robinson_chapter1.txt', 'a') as ouf:
+    ouf.write(f'\n{most_frequent_letter(chapter)}')
+    ouf.write(f'\n{count_letters(chapter)}')
+    ouf.write(f'\n{count_words(chapter)}')
+    ouf.write(f'\n{most_frequent_word(chapter)}')
+
+
+
 
 
 
