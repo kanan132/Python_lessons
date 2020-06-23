@@ -51,10 +51,21 @@ def word_cloud(dict):
     cloud.generate_from_frequencies(dict)
     return cloud.to_array()
 
-#print(most_frequency_words(response.text))
-#antonyms(most_frequency_words(response.text))
+while True:
+    print('Choose what do you want to see.')
+    choice = input('a: Dictionary of all the words\nb: Antonyms of the most frequency words\nc: Word cloud of the most frequency words\nd:quit\t')
+    if choice == 'a':
+        print(most_frequency_words(response.text))
+    elif choice == 'b':
+        antonyms(most_frequency_words(response.text))
+    elif choice == 'c':
+        myimage = word_cloud(most_frequency_words(response.text))
+        plt.imshow(myimage, interpolation = 'nearest')
+        plt.axis('off')
+        plt.show()
+    else:
+        print('Exiting program')
+        break
 
-myimage = word_cloud(most_frequency_words(response.text))
-plt.imshow(myimage, interpolation = 'nearest')
-plt.axis('off')
-plt.show()
+
+
